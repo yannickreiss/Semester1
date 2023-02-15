@@ -1,0 +1,74 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\author{Yannick Reiß}
+\title{MPT2}
+\begin{document}
+
+\section*{Aufgabe 1}
+\subsection*{a)}
+MPROM (Maskenprogrammiertes ROM)
+
+\subsection*{b)}
+Bitleitungen: 8
+Wortleitungen: 4
+
+\subsection*{c)}
+5 Bits, von denen zwei die Zeile und drei die Spalte festlegen.
+
+\subsection*{d)}
+Im Baustein können 32 Bit gespeichert werden
+
+\subsection*{e)}
+\begin{itemize}
+\item[Adresse] Wert
+\item[01100] 0
+\item[01101] 0
+\item[01110] 0
+\item[01111] 0
+\item[10000] 1
+\item[10001] 0
+\end{itemize}
+
+\section{Aufgabe 2}
+\subsection*{a)}
+Wortbreite: 4 Bit
+Bei 2M
+Adressanschlüsse $= 4 \cdot 2^{20} = 4197304$
+
+\subsection*{b)}
+Die Zeitspanne heißt Erholzeit. Die Zeitspanne kommt durch die Dauer der Entladung nach einem Zugriff.
+
+\subsection*{c)}
+Speicherkapazität:\\
+$4 \cdot 2048 \cdot 1024 = 8MBit = 1MByte$\\
+\\
+Die Zeilen werden mit $log_2(2048) = 11$ Bit angegeben.\\
+Die Spalten werden mit $log_2(1024) = 10$ Bit angegeben.\\
+Damit lassen sich jeweils 4 Bit ansprechen.\\
+\\
+Abstände Zeile / Spalte:\\
+$\frac{64ms}{2038}$\\
+$\frac{64ms}{1024}$\\
+\\
+
+\subsection*{d)}
+Daten werden auf mehrere Bänke verteilt, damit die Wahrscheinlichkeit für ein Ansprechen der Bank während der Precharge Zeit minimiert.
+
+
+\section*{Aufgabe 3}
+
+\subsection*{a)}
+$3^2 + 7^2 = 9 + 49= 58$ Adressen\\
+
+\subsection*{b)}
+
+
+
+
+\end{document}

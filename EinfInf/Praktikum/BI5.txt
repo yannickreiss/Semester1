@@ -1,0 +1,12 @@
+Aufgabe 2:
+$ ssh EinfInf@192.168.237.93
+Password: 
+
+EinfInf@raspberrypi ~ $
+$ ./reset_code.sh
+
+Aufgabe 3:
+50ms = 20Hz
+Abänderung der io.delay Parameter:
+10Hz
+40Hz = 

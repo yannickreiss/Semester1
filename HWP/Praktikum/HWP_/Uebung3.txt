@@ -1,0 +1,55 @@
+Aufgabe 3.1
+a) ---
+b) 
+mkdir repo
+cd repo
+git init
+touch readme.txt
+git add readme.txt
+<readme.txt verändern>
+git diff -> zeigt Änderung in der Datei an
+git commit -m "First Commit"
+c)
+
+d)
+
+Aufgabe 3.2
+a) info info
+b) 
+- t
+- u
+- g <Name>
+- s M-/<Pattern
+- s /<Pattern>
+- n (next, p (previous)
+- info <Name>
+
+Aufgabe 3.3
+a) curl -o hwp1_p3.c https://www.cs.hs-rm.de/~kaiser/2122_hwpi/hwp1_p3.c
+b) 
+int main(void) 
+{
+  for (int i = 0; i < 10; ++i)
+    outputDigit(i);
+  return 0;
+}
+
+c)
+$ make
+$ simulavr -d atmega16 -g -W 0x20,-
+$ avr-gdb -tui hwp1_p3
+(gdb) target remote :1212
+(gdb) load hwp1_p3
+(gdb) layout reg
+(gdb) list main
+(gdb) continue
+
+=>
+0123456789
+
+d)
+void putC ( char character )
+{
+  volatile unsigned char *addressOut = (unsigned char*)0x20;
+  *addressOut = character;
+}

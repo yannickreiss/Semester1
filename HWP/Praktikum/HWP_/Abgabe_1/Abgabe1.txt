@@ -1,0 +1,52 @@
+Aufgabe 1.1
+a)
+DEZ=112
+HEX=70
+Zweite Zeile:
+(1 | 2) = 3
+a <<= 3; => a wird drei mal nach links geshiftet:
+00001110
+00011100
+00111000
+01110000
+
+b)
+while ( 1 ) {
+    printf("abc");
+    break;
+}
+
+c)
+1. 
+Zeile 1:
+    Nach int main(void) darf es nur stehen, wenn darauf keine Funktionsdefinition folgt.
+Zeile 8:
+    Hinter dem do darf es nicht stehen, sonst wird die Schleife nicht erkannt.
+Zeile 11:
+    Das Semikolon darf nicht vor dem Keyword while liegen.
+
+d)
+    -Wall
+    Eine Warnung kann mittels -we<error> zum Fehler hochgestuft werden.
+    Bei einer Warnung merkt der Compiler nur an, dass Probleme auftreten können, die den korrekten
+    Programmablauf stören, kompiliert den Code aber und erzeugt ein Programm, während bei einem Fehler
+    keine Übersetzung stattfindet, bis der Fehler behoben ist.
+
+e)
+1)
+    (3 < 5 - 2)
+    (3 < 3)
+    -> 0
+2)
+    (!0 == 2)
+    (1 == 2)
+    -> 0
+
+f)
+    1) 3
+    2) 1
+
+Aufgabe 1.2
+a)
+$ touch ggt.c ggt.h ggttest.c Makefile
+b)
